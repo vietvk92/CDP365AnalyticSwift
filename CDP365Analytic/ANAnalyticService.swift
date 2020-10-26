@@ -26,11 +26,22 @@ class ANAnalyticService: CoreAnalyticService {
     }
     
     static func logEvent(categoryName: String, actionName: String, items: [NSDictionary]?, extra: NSDictionary?, dimension: [NSDictionary]?) {
-        
+        let event = ANEvent(categoryName: categoryName, actionName: actionName, items: items, extra: extra, dimension: dimension)
+        dispatcher.send(event: event, success: {
+            ANLogger.debug("Dispatched batch of event.")
+        }, failure: { error in
+            ANLogger.error(error)
+        })
     }
     
     static func resetAnonymousId() {
-        
+        let event = ANEvent(screenName: "", categoryName: "user", actionName: ANConfigurationKeys.ActionResetAnonymousId)
+        dispatcher.send(event: event, success: {
+            ANLogger.debug("Dispatched batch of event.")
+            ANUtilities.anonymousID.nextID().storageIndexAnonymous()
+        }, failure: { error in
+            ANLogger.error(error)
+        })
     }
     
     

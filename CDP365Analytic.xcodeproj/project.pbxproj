@@ -62,6 +62,8 @@
 		04998A5D254676FC00B3BA0D /* ITKeyboardTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04998A3B254676FC00B3BA0D /* ITKeyboardTrackingView.swift */; };
 		04998A5E254676FC00B3BA0D /* ITMarginAdjustable+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04998A3C254676FC00B3BA0D /* ITMarginAdjustable+Animation.swift */; };
 		04998A602546771C00B3BA0D /* ANCampaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04998A5F2546771C00B3BA0D /* ANCampaign.swift */; };
+		04D805EE2546C22C0043C94F /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D805ED2546C22C0043C94F /* ErrorExtension.swift */; };
+		04D806032546C5B90043C94F /* ANAdsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D806022546C5B90043C94F /* ANAdsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		04998A3B254676FC00B3BA0D /* ITKeyboardTrackingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITKeyboardTrackingView.swift; sourceTree = "<group>"; };
 		04998A3C254676FC00B3BA0D /* ITMarginAdjustable+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ITMarginAdjustable+Animation.swift"; sourceTree = "<group>"; };
 		04998A5F2546771C00B3BA0D /* ANCampaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANCampaign.swift; sourceTree = "<group>"; };
+		04D805ED2546C22C0043C94F /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		04D806022546C5B90043C94F /* ANAdsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANAdsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,52 +179,12 @@
 		049989B82545E7CE00B3BA0D /* CDP365Analytic */ = {
 			isa = PBXGroup;
 			children = (
-				04998A1A254676FC00B3BA0D /* ITSwiftMessages.swift */,
-				04998A1B254676FC00B3BA0D /* ITPhysicsAnimation.swift */,
-				04998A1C254676FC00B3BA0D /* CALayer+Utils.swift */,
-				04998A1D254676FC00B3BA0D /* ITPresenter.swift */,
-				04998A1E254676FC00B3BA0D /* ITAccessibleMessage.swift */,
-				04998A1F254676FC00B3BA0D /* ITSwiftMessagesSegue.swift */,
-				04998A20254676FC00B3BA0D /* ITMessageView.swift */,
-				04998A21254676FC00B3BA0D /* ITTopBottomAnimation.swift */,
-				04998A22254676FC00B3BA0D /* ITWeak.swift */,
-				04998A23254676FC00B3BA0D /* ITMarginAdjustable.swift */,
-				04998A24254676FC00B3BA0D /* ITCornerRoundingView.swift */,
-				04998A2C254676FC00B3BA0D /* ITBackgroundViewable.swift */,
-				04998A2D254676FC00B3BA0D /* NSLayoutConstraint+Utils.swift */,
-				04998A2E254676FC00B3BA0D /* ITError.swift */,
-				04998A2F254676FC00B3BA0D /* ITAnimator.swift */,
-				04998A30254676FC00B3BA0D /* UIViewController+Utils.swift */,
-				04998A31254676FC00B3BA0D /* ITWindowViewController.swift */,
-				04998A32254676FC00B3BA0D /* ITMaskingView.swift */,
-				04998A33254676FC00B3BA0D /* ITPhysicsPanHandler.swift */,
-				04998A34254676FC00B3BA0D /* ITIdentifiable.swift */,
-				04998A35254676FC00B3BA0D /* ITPassthroughWindow.swift */,
-				04998A36254676FC00B3BA0D /* Theme.swift */,
-				04998A37254676FC00B3BA0D /* ITPassthroughView.swift */,
-				04998A38254676FC00B3BA0D /* NSBundle+Utils.swift */,
-				04998A39254676FC00B3BA0D /* UIEdgeInsets+Utils.swift */,
-				04998A3A254676FC00B3BA0D /* ITBaseView.swift */,
-				04998A3B254676FC00B3BA0D /* ITKeyboardTrackingView.swift */,
-				04998A3C254676FC00B3BA0D /* ITMarginAdjustable+Animation.swift */,
-				04998A07254667C200B3BA0D /* ANKeychainSwift.swift */,
-				049989F12546600E00B3BA0D /* ANConfigure.swift */,
-				04998A5F2546771C00B3BA0D /* ANCampaign.swift */,
-				04998A132546737400B3BA0D /* ANLogger.swift */,
-				049989FB2546637C00B3BA0D /* ValueExtension.swift */,
-				049989D12545E84000B3BA0D /* CoreAnalyticService.swift */,
-				049989D32545E88200B3BA0D /* ANAnalyticService.swift */,
-				049989D52545E8F800B3BA0D /* CDP365Analytic.swift */,
-				049989E12545EBD900B3BA0D /* ANEvent.swift */,
-				049989EB2545EEA200B3BA0D /* ANDispatcher.swift */,
-				049989ED2545EF1000B3BA0D /* ANSender.swift */,
-				049989F7254662DA00B3BA0D /* ANEventAPISerializer.swift */,
-				04998A0F2546731500B3BA0D /* FacebookAnalyticService.swift */,
-				04998A112546732B00B3BA0D /* GoogleAnalyticService.swift */,
-				049989EF25465FC200B3BA0D /* ANConfiguration.swift */,
-				049989E72545ECF500B3BA0D /* ANSession.swift */,
-				049989F92546633700B3BA0D /* ANUtility.swift */,
-				049989FD2546649E00B3BA0D /* ANLocation.swift */,
+				04D805E62546C1010043C94F /* Ads */,
+				04D805EB2546C1DD0043C94F /* ANConfiguration */,
+				04D805F92546C29E0043C94F /* Core */,
+				04D805FD2546C3070043C94F /* Extension */,
+				04D805FC2546C2EE0043C94F /* Object */,
+				04D805E92546C16A0043C94F /* Utility */,
 				04998A25254676FC00B3BA0D /* Resources */,
 				049989B92545E7CE00B3BA0D /* CDP365Analytic.h */,
 				049989BA2545E7CE00B3BA0D /* Info.plist */,
@@ -248,6 +212,96 @@
 				04998A2B254676FC00B3BA0D /* CardView.xib */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		04D805E62546C1010043C94F /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				04998A30254676FC00B3BA0D /* UIViewController+Utils.swift */,
+				04998A2F254676FC00B3BA0D /* ITAnimator.swift */,
+				04998A31254676FC00B3BA0D /* ITWindowViewController.swift */,
+				04998A32254676FC00B3BA0D /* ITMaskingView.swift */,
+				04998A33254676FC00B3BA0D /* ITPhysicsPanHandler.swift */,
+				04998A34254676FC00B3BA0D /* ITIdentifiable.swift */,
+				04998A35254676FC00B3BA0D /* ITPassthroughWindow.swift */,
+				04998A36254676FC00B3BA0D /* Theme.swift */,
+				04998A37254676FC00B3BA0D /* ITPassthroughView.swift */,
+				04998A38254676FC00B3BA0D /* NSBundle+Utils.swift */,
+				04998A39254676FC00B3BA0D /* UIEdgeInsets+Utils.swift */,
+				04998A3A254676FC00B3BA0D /* ITBaseView.swift */,
+				04998A3B254676FC00B3BA0D /* ITKeyboardTrackingView.swift */,
+				04998A3C254676FC00B3BA0D /* ITMarginAdjustable+Animation.swift */,
+				04998A2E254676FC00B3BA0D /* ITError.swift */,
+				04998A1A254676FC00B3BA0D /* ITSwiftMessages.swift */,
+				04998A1C254676FC00B3BA0D /* CALayer+Utils.swift */,
+				04998A1D254676FC00B3BA0D /* ITPresenter.swift */,
+				04998A1E254676FC00B3BA0D /* ITAccessibleMessage.swift */,
+				04998A1F254676FC00B3BA0D /* ITSwiftMessagesSegue.swift */,
+				04998A20254676FC00B3BA0D /* ITMessageView.swift */,
+				04998A21254676FC00B3BA0D /* ITTopBottomAnimation.swift */,
+				04998A22254676FC00B3BA0D /* ITWeak.swift */,
+				04998A23254676FC00B3BA0D /* ITMarginAdjustable.swift */,
+				04998A24254676FC00B3BA0D /* ITCornerRoundingView.swift */,
+				04998A2C254676FC00B3BA0D /* ITBackgroundViewable.swift */,
+				04998A2D254676FC00B3BA0D /* NSLayoutConstraint+Utils.swift */,
+				04998A1B254676FC00B3BA0D /* ITPhysicsAnimation.swift */,
+			);
+			name = Ads;
+			sourceTree = "<group>";
+		};
+		04D805E92546C16A0043C94F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04998A132546737400B3BA0D /* ANLogger.swift */,
+				04998A07254667C200B3BA0D /* ANKeychainSwift.swift */,
+				049989E72545ECF500B3BA0D /* ANSession.swift */,
+				049989FD2546649E00B3BA0D /* ANLocation.swift */,
+				049989F92546633700B3BA0D /* ANUtility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		04D805EB2546C1DD0043C94F /* ANConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				049989EF25465FC200B3BA0D /* ANConfiguration.swift */,
+			);
+			name = ANConfiguration;
+			sourceTree = "<group>";
+		};
+		04D805F92546C29E0043C94F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				049989D12545E84000B3BA0D /* CoreAnalyticService.swift */,
+				049989D32545E88200B3BA0D /* ANAnalyticService.swift */,
+				04998A112546732B00B3BA0D /* GoogleAnalyticService.swift */,
+				04998A0F2546731500B3BA0D /* FacebookAnalyticService.swift */,
+				049989ED2545EF1000B3BA0D /* ANSender.swift */,
+				049989EB2545EEA200B3BA0D /* ANDispatcher.swift */,
+				049989E12545EBD900B3BA0D /* ANEvent.swift */,
+				049989D52545E8F800B3BA0D /* CDP365Analytic.swift */,
+				049989F7254662DA00B3BA0D /* ANEventAPISerializer.swift */,
+				04D806022546C5B90043C94F /* ANAdsResponse.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		04D805FC2546C2EE0043C94F /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				049989F12546600E00B3BA0D /* ANConfigure.swift */,
+				04998A5F2546771C00B3BA0D /* ANCampaign.swift */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		04D805FD2546C3070043C94F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04D805ED2546C22C0043C94F /* ErrorExtension.swift */,
+				049989FB2546637C00B3BA0D /* ValueExtension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,7 +440,9 @@
 				04998A46254676FC00B3BA0D /* ITMarginAdjustable.swift in Sources */,
 				049989D42545E88200B3BA0D /* ANAnalyticService.swift in Sources */,
 				04998A5D254676FC00B3BA0D /* ITKeyboardTrackingView.swift in Sources */,
+				04D806032546C5B90043C94F /* ANAdsResponse.swift in Sources */,
 				04998A47254676FC00B3BA0D /* ITCornerRoundingView.swift in Sources */,
+				04D805EE2546C22C0043C94F /* ErrorExtension.swift in Sources */,
 				04998A59254676FC00B3BA0D /* ITPassthroughView.swift in Sources */,
 				049989D62545E8F800B3BA0D /* CDP365Analytic.swift in Sources */,
 				04998A52254676FC00B3BA0D /* UIViewController+Utils.swift in Sources */,
